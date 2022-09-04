@@ -73,6 +73,7 @@ speaker has 70 utterance segments, and each segment is four seconds long. These 
 deduce that the ML-VAE learns the speaker information from the style representation from
 the group supervision as expected. However, the results should be further investigated to
 understand the style embedding.
+
 ![ML_VAE](https://user-images.githubusercontent.com/57464195/188325693-55821aab-850e-4419-9c55-a33471733372.png)
 
 
