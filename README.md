@@ -63,7 +63,7 @@ a backpropagation algorithm to learn the speaker information as a generative fac
 
 
 # Evaluation
-
+## t-SNE:
 t-SNE plot is used to analyse the style embedding
 of speech data qualitatively. The result, as shown in the figure 6.5 is promising and shows
 that the style embedding is clustered based on speaker utterances. In the plot, four different
@@ -76,4 +76,12 @@ understand the style embedding.
 
 ![ML_VAE](https://user-images.githubusercontent.com/57464195/188325693-55821aab-850e-4419-9c55-a33471733372.png)
 
-
+## Evalutation on Error Rate:
+The speaker’s invariant information is supposed to be inferred from the content embedding
+so that speaker information is discarded, resulting in poor speaker classification and better
+phoneme classification on the downstream tasks. The best checkpoint with minimum overall
+loss chosen from the trained ML-VAE model is used to perform the downstream classifications.
+Once the downstream training tasks are completed, the error rates. are
+calculated. The result of ML-VAE model in  **Phoneme Error Rate** achieved **34.3%**
+and the **Speaker Error Rate** of **56.83%**. The style embedding from the trained ML-VAE model is used to
+calculate the **Equal Error Rate (EER) ** on the ”test-clean” dataset and achieved **12.87%**.
