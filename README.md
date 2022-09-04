@@ -84,4 +84,4 @@ loss chosen from the trained ML-VAE model is used to perform the downstream clas
 Once the downstream training tasks are completed, the error rates. are
 calculated. The result of ML-VAE model in  **Phoneme Error Rate** achieved **34.3%**
 and the **Speaker Error Rate** of **56.83%**. The style embedding from the trained ML-VAE model is used to
-calculate the **Equal Error Rate (EER) ** on the ”test-clean” dataset and achieved **12.87%**.
+calculate the **Equal Error Rate (EER)** on the ”test-clean” dataset and achieved **12.87%**.
