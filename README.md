@@ -62,5 +62,17 @@ a backpropagation algorithm to learn the speaker information as a generative fac
 
 
 
-# Results
+# Evaluation
+
+t-SNE plot is used to analyse the style embedding
+of speech data qualitatively. The result, as shown in the figure 6.5 is promising and shows
+that the style embedding is clustered based on speaker utterances. In the plot, four different
+speakers are randomly chosen from the ’test-clean-100’ dataset, and each data point represents
+different utterances produced by the speakers. There are 280 utterance segments, and every
+speaker has 70 utterance segments, and each segment is four seconds long. These results
+deduce that the ML-VAE learns the speaker information from the style representation from
+the group supervision as expected. However, the results should be further investigated to
+understand the style embedding.
+![ML_VAE](https://user-images.githubusercontent.com/57464195/188325693-55821aab-850e-4419-9c55-a33471733372.png)
+
 
